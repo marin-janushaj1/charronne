@@ -1,0 +1,117 @@
+/* CSS Custom Properties (Design Tokens) */
+
+:root {
+    /* Color Palette */
+    --color-black: #000000;
+    --color-gold: #C89A3A;
+    --color-ivory: #F8F4EC;
+    --color-white: #FFFFFF;
+
+    /* Semantic Colors */
+    --color-background-primary: var(--color-black);
+    --color-background-secondary: var(--color-ivory);
+    --color-text-primary: var(--color-white);
+    --color-text-secondary: var(--color-black);
+    --color-accent: var(--color-gold);
+
+    /* Typography */
+    --font-serif: 'Playfair Display', Georgia, serif;
+    --font-sans: 'Inter', 'Helvetica Neue', Arial, sans-serif;
+
+    /* Font Sizes */
+    --font-size-xs: 0.75rem;      /* 12px */
+    --font-size-sm: 0.875rem;     /* 14px */
+    --font-size-base: 1rem;       /* 16px */
+    --font-size-md: 1.125rem;     /* 18px */
+    --font-size-lg: 1.25rem;      /* 20px */
+    --font-size-xl: 1.5rem;       /* 24px */
+    --font-size-2xl: 2rem;        /* 32px */
+    --font-size-3xl: 2.5rem;      /* 40px */
+    --font-size-4xl: 3rem;        /* 48px */
+    --font-size-5xl: 4rem;        /* 64px */
+    --font-size-6xl: 5rem;        /* 80px */
+    --font-size-hero: 6rem;       /* 96px */
+
+    /* Font Weights */
+    --font-weight-light: 300;
+    --font-weight-normal: 400;
+    --font-weight-medium: 500;
+    --font-weight-semibold: 600;
+    --font-weight-bold: 700;
+    --font-weight-black: 900;
+
+    /* Line Heights */
+    --line-height-tight: 1.2;
+    --line-height-normal: 1.6;
+    --line-height-relaxed: 1.8;
+
+    /* Letter Spacing */
+    --letter-spacing-tight: -0.02em;
+    --letter-spacing-normal: 0;
+    --letter-spacing-wide: 0.1em;
+    --letter-spacing-wider: 0.2em;
+    --letter-spacing-widest: 0.3em;
+
+    /* Spacing Scale */
+    --spacing-xs: 0.5rem;     /* 8px */
+    --spacing-sm: 1rem;       /* 16px */
+    --spacing-md: 1.5rem;     /* 24px */
+    --spacing-lg: 2rem;       /* 32px */
+    --spacing-xl: 3rem;       /* 48px */
+    --spacing-2xl: 4rem;      /* 64px */
+    --spacing-3xl: 6rem;      /* 96px */
+    --spacing-4xl: 8rem;      /* 128px */
+    --spacing-5xl: 12rem;     /* 192px */
+
+    /* Container */
+    --container-max-width: 1400px;
+    --container-padding: 2rem;
+
+    /* Grid Gaps */
+    --grid-gap-sm: 1rem;
+    --grid-gap-md: 2rem;
+    --grid-gap-lg: 3rem;
+    --grid-gap-xl: 4rem;
+
+    /* Border Radius */
+    --radius-none: 0;
+    --radius-sm: 0.125rem;
+    --radius-md: 0.25rem;
+    --radius-lg: 0.5rem;
+
+    /* Transitions */
+    --transition-fast: 150ms ease-in-out;
+    --transition-base: 300ms ease-in-out;
+    --transition-slow: 500ms ease-in-out;
+
+    /* Shadows */
+    --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+    --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+    --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+
+    /* Z-index Scale */
+    --z-index-base: 1;
+    --z-index-dropdown: 100;
+    --z-index-sticky: 200;
+    --z-index-nav: 300;
+    --z-index-modal: 400;
+    --z-index-tooltip: 500;
+
+    /* Breakpoints (for reference in media queries) */
+    --breakpoint-mobile: 768px;
+    --breakpoint-tablet: 1024px;
+    --breakpoint-desktop: 1400px;
+}
+
+/* Mobile adjustments */
+@media (max-width: 768px) {
+    :root {
+        --font-size-hero: 3rem;     /* 48px on mobile */
+        --font-size-5xl: 2.5rem;    /* 40px on mobile */
+        --font-size-4xl: 2rem;      /* 32px on mobile */
+        --container-padding: 1rem;
+        --spacing-3xl: 3rem;
+        --spacing-4xl: 4rem;
+    }
+}

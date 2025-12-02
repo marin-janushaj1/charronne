@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="CHARRONNE - Contemporary couture. Timeless elegance. High fashion meets Parisian sophistication.">
+    <title>CHARRONNE - Contemporary Couture</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/typography.css">
+    <link rel="stylesheet" href="css/navigation.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/themes.css">
+    <link rel="stylesheet" href="css/pages/home.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="main-nav" role="navigation">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">
+                <img src="assets/images/logo.jpeg" alt="CHARRONNE Logo" class="logo-img">
+            </a>
+
+            <button class="mobile-menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+            </button>
+
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link active" data-i18n="nav-home">Home</a></li>
+                <li><a href="about.html" class="nav-link" data-i18n="nav-about">About</a></li>
+                <li><a href="inspirations.html" class="nav-link" data-i18n="nav-inspirations">Inspirations</a></li>
+                <li><a href="products.html" class="nav-link" data-i18n="nav-products">Products</a></li>
+                <li><a href="mockups.html" class="nav-link" data-i18n="nav-mockups">Mock-ups</a></li>
+                <li><a href="sketches.html" class="nav-link" data-i18n="nav-sketches">Sketches</a></li>
+                <li><a href="contact.html" class="nav-link" data-i18n="nav-contact">Contact Us</a></li>
+            </ul>
+
+            <div class="nav-controls">
+                <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme">Light</button>
+                <button id="language-toggle" class="language-toggle" aria-label="Switch language">EN</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-background parallax-element">
+            <img src="assets/images/hero.jpeg" alt="CHARRONNE couture showcase" class="hero-img">
+        </div>
+        <div class="hero-content">
+            <div class="hero-text fade-in">
+                <h1 class="hero-title" data-i18n="hero-title">CHARRONNE</h1>
+                <p class="hero-subtitle" data-i18n="hero-subtitle">Contemporary couture. Timeless elegance.</p>
+                <div class="hero-cta">
+                    <a href="products.html" class="btn btn-primary" data-i18n="btn-explore">Explore Collections</a>
+                    <a href="inspirations.html" class="btn btn-secondary" data-i18n="btn-inspirations">View Inspirations</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Collection Section -->
+    <section class="featured-collection">
+        <div class="section-container">
+            <h2 class="section-title fade-in" data-i18n="featured-title">Featured Collection</h2>
+            <div class="featured-grid fade-in">
+                <a href="product-detail.html?id=shoe-01" class="featured-card">
+                    <div class="featured-image">
+                        <img src="assets/images/shoes/WhatsApp Image 2025-12-02 at 02.46.00 (1).jpeg" alt="Velvet Ribbon Heel">
+                    </div>
+                    <div class="featured-info">
+                        <p class="featured-category">Shoes</p>
+                        <h3 class="featured-name">Velvet Ribbon Heel</h3>
+                        <p class="featured-price">€2,850</p>
+                    </div>
+                </a>
+                <a href="product-detail.html?id=shoe-08" class="featured-card">
+                    <div class="featured-image">
+                        <img src="assets/images/shoes/WhatsApp Image 2025-12-02 at 02.46.01 (4).jpeg" alt="Crescent Moon Pump">
+                    </div>
+                    <div class="featured-info">
+                        <p class="featured-category">Shoes</p>
+                        <h3 class="featured-name">Crescent Moon Pump</h3>
+                        <p class="featured-price">€3,400</p>
+                    </div>
+                </a>
+                <a href="product-detail.html?id=bag-03" class="featured-card">
+                    <div class="featured-image">
+                        <img src="assets/images/bags/WhatsApp Image 2025-12-02 at 02.45.23 (2).jpeg" alt="Tulle Bow Tote">
+                    </div>
+                    <div class="featured-info">
+                        <p class="featured-category">Bags</p>
+                        <h3 class="featured-name">Tulle Bow Tote</h3>
+                        <p class="featured-price">€2,450</p>
+                    </div>
+                </a>
+                <a href="product-detail.html?id=bag-08" class="featured-card">
+                    <div class="featured-image">
+                        <img src="assets/images/bags/WhatsApp Image 2025-12-02 at 02.45.24 (1).jpeg" alt="Curtain Shoulder Bag">
+                    </div>
+                    <div class="featured-info">
+                        <p class="featured-category">Bags</p>
+                        <h3 class="featured-name">Curtain Shoulder Bag</h3>
+                        <p class="featured-price">€3,600</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Philosophy Section -->
+    <section class="philosophy">
+        <div class="section-container">
+            <div class="divider-line"></div>
+            <p class="philosophy-text fade-in" data-i18n="philosophy-text">
+                Where modern silhouettes meet timeless craftsmanship. Each piece tells a story of Parisian elegance,
+                meticulously designed for those who appreciate the art of haute couture. CHARRONNE embodies the perfect
+                balance between contemporary innovation and classical refinement.
+            </p>
+            <div class="divider-line"></div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="section-container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <img src="assets/images/logo.jpeg" alt="CHARRONNE Logo" class="footer-logo">
+                    <p class="footer-tagline">Charonne crafts restrained opulence—quiet luxury for those who appreciate artistry in every detail.</p>
+                </div>
+                <div>
+                    <h3 class="footer-heading">Explore</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="inspirations.html">Inspirations</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="mockups.html">Mock-ups</a></li>
+                        <li><a href="sketches.html">Sketches</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="footer-heading">Contact</h3>
+                    <div class="footer-contact">
+                        <span>Rue Saint-Honoré, Paris</span>
+                        <a href="mailto:atelier@charronne.com">atelier@charronne.com</a>
+                        <a href="https://instagram.com/charronne" target="_blank" rel="noopener noreferrer">@charronne</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <span>© 2025 CHARRONNE. All rights reserved.</span>
+                <div class="footer-social">
+                    <a class="footer-pill" href="mailto:atelier@charronne.com">Email</a>
+                    <a class="footer-pill" href="https://instagram.com/charronne" target="_blank" rel="noopener noreferrer">Instagram</a>
+                    <a class="footer-pill" href="https://www.pinterest.com" target="_blank" rel="noopener noreferrer">Pinterest</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="js/theme.js"></script>
+    <script src="js/products-data.js"></script>
+    <script src="js/translations.js"></script>
+    <script src="js/navigation.js"></script>
+    <script src="js/scroll-animations.js"></script>
+</body>
+</html>

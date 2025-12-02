@@ -1,0 +1,220 @@
+/* Sketches Page Styles */
+
+.sketches-header {
+    background-color: var(--color-background-secondary);
+}
+
+.sketches-header .page-title {
+    color: var(--color-text-secondary);
+}
+
+.sketches-content {
+    background-color: var(--color-background-secondary);
+    padding: var(--spacing-4xl) 0;
+}
+
+.sketches-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: var(--grid-gap-lg);
+}
+
+.sketch-item {
+    position: relative;
+}
+
+.sketch-image {
+    aspect-ratio: 3/4;
+}
+
+.sketch-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.lightbox-trigger {
+    cursor: pointer;
+}
+
+.technical-section {
+    background-color: var(--color-background-primary);
+    padding: var(--spacing-4xl) 0;
+}
+
+.technical-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: var(--grid-gap-lg);
+    margin-top: var(--spacing-xl);
+}
+
+.technical-card {
+    background: var(--color-card-bg);
+    border: 1px solid var(--color-border-subtle);
+    box-shadow: var(--shadow-md);
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform var(--transition-base), box-shadow var(--transition-base);
+}
+
+.technical-card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-lg);
+}
+
+.technical-image {
+    aspect-ratio: 3/4;
+    overflow: hidden;
+}
+
+.technical-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform var(--transition-slow);
+}
+
+.technical-card:hover .technical-image img {
+    transform: scale(1.05);
+}
+
+.technical-info {
+    padding: var(--spacing-md);
+    background: var(--color-background-primary);
+}
+
+.technical-name {
+    font-family: var(--font-serif);
+    font-size: var(--font-size-md);
+}
+
+.technical-note {
+    font-family: var(--font-sans);
+    font-size: var(--font-size-sm);
+    color: var(--color-text-secondary);
+}
+
+/* Lightbox Modal */
+.lightbox {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.95);
+    z-index: var(--z-index-modal);
+    align-items: center;
+    justify-content: center;
+}
+
+.lightbox.active {
+    display: flex;
+}
+
+.lightbox-content {
+    position: relative;
+    max-width: 90%;
+    max-height: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.lightbox-image {
+    max-width: 100%;
+    max-height: 90vh;
+    width: auto;
+    height: auto;
+    aspect-ratio: 3/4;
+    background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+}
+
+.lightbox-close {
+    position: fixed;
+    top: var(--spacing-lg);
+    right: var(--spacing-lg);
+    font-size: var(--font-size-4xl);
+    color: var(--color-white);
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    z-index: calc(var(--z-index-modal) + 1);
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: color var(--transition-base);
+}
+
+.lightbox-close:hover {
+    color: var(--color-gold);
+}
+
+.lightbox-prev,
+.lightbox-next {
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: var(--font-size-5xl);
+    color: var(--color-white);
+    background: rgba(0, 0, 0, 0.5);
+    border: none;
+    cursor: pointer;
+    z-index: calc(var(--z-index-modal) + 1);
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all var(--transition-base);
+}
+
+.lightbox-prev {
+    left: var(--spacing-lg);
+}
+
+.lightbox-next {
+    right: var(--spacing-lg);
+}
+
+.lightbox-prev:hover,
+.lightbox-next:hover {
+    background: rgba(200, 154, 58, 0.3);
+    color: var(--color-gold);
+}
+
+@media (max-width: 768px) {
+    .sketches-gallery {
+        grid-template-columns: 1fr;
+        gap: var(--grid-gap-md);
+    }
+
+    .technical-grid {
+        grid-template-columns: 1fr;
+        gap: var(--grid-gap-md);
+    }
+
+    .lightbox-close {
+        top: var(--spacing-sm);
+        right: var(--spacing-sm);
+        font-size: var(--font-size-3xl);
+    }
+
+    .lightbox-prev,
+    .lightbox-next {
+        width: 40px;
+        height: 40px;
+        font-size: var(--font-size-3xl);
+    }
+
+    .lightbox-prev {
+        left: var(--spacing-sm);
+    }
+
+    .lightbox-next {
+        right: var(--spacing-sm);
+    }
+}

@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="About CHARRONNE - Discover the story behind our contemporary couture house.">
+    <title>About - CHARRONNE</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/typography.css">
+    <link rel="stylesheet" href="css/navigation.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/themes.css">
+    <link rel="stylesheet" href="css/pages/about.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="main-nav" role="navigation">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">
+                <img src="assets/images/logo.jpeg" alt="CHARRONNE Logo" class="logo-img">
+            </a>
+
+            <button class="mobile-menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+            </button>
+
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link" data-i18n="nav-home">Home</a></li>
+                <li><a href="about.html" class="nav-link active" data-i18n="nav-about">About</a></li>
+                <li><a href="inspirations.html" class="nav-link" data-i18n="nav-inspirations">Inspirations</a></li>
+                <li><a href="products.html" class="nav-link" data-i18n="nav-products">Products</a></li>
+                <li><a href="mockups.html" class="nav-link" data-i18n="nav-mockups">Mock-ups</a></li>
+                <li><a href="sketches.html" class="nav-link" data-i18n="nav-sketches">Sketches</a></li>
+                <li><a href="contact.html" class="nav-link" data-i18n="nav-contact">Contact Us</a></li>
+            </ul>
+
+            <div class="nav-controls">
+                <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme">Light</button>
+                <button id="language-toggle" class="language-toggle" aria-label="Switch language">EN</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- About Split Section -->
+    <section class="about-split">
+        <div class="about-content-wrapper">
+            <!-- Left Column: Story -->
+            <div class="about-story fade-in">
+                <div class="story-content">
+                    <h2 class="section-heading gold">The Atelier</h2>
+                    <p class="body-text">
+                        Charonne was born from a quiet obsession: the pursuit of beauty elevated to its purest, most
+                        disciplined form. Founded in Paris in 1987 by a group of elusive designers and friends, the
+                        house emerged from a private atelier tucked behind Rue de Charonne, where bespoke accessories
+                        were crafted exclusively for a circle of aristocrats, collectors, and museum patrons. Every
+                        piece was handmade, every flourish intentional, every detail whispered rather than declared.
+                        The brand’s signature—an ornate C shaped by sculptural botanical curves—became a symbol of
+                        refinement reserved only for those who discovered it, rather than those who searched for it.
+                    </p>
+
+                    <h3 class="section-subheading gold">Philosophy</h3>
+                    <p class="body-text">
+                        Over the decades, Charonne evolved from a hidden atelier into a modern luxury house without ever
+                        surrendering its discreet essence. The brand’s philosophy remains rooted in the interplay between
+                        heritage craftsmanship and contemporary minimalism. Each product—whether a handbag, shoe box, or
+                        velvet pouch—is treated as an heirloom object, designed to age with the same grace as the clients
+                        who own them. Materials are selected not only for beauty, but for story: cottons woven on
+                        century-old looms, metals cast in small Parisian studios, velvet milled in limited batches. Where
+                        other brands chase attention, Charonne cultivates intimacy—quiet luxury intended for those who
+                        understand that true elegance is not seen, but felt.
+                    </p>
+
+                    <h3 class="section-subheading gold">Today</h3>
+                    <p class="body-text">
+                        Today, Charonne stands as a symbol of restrained opulence, blending French artistic heritage with
+                        the modern world’s hunger for purity and permanence. Though the house now whispers to a global
+                        audience, each creation still carries the spirit of that original atelier: mysterious,
+                        meticulous, and unmistakably timeless.
+                    </p>
+
+                    <h3 class="section-subheading gold">Our Audience</h3>
+                    <p class="body-text">
+                        Charonne speaks to people who choose craftsmanship over excess and intimacy over spectacle. They are
+                        culturally attuned, globally minded, and drawn to sculptural pieces that feel personal and endure
+                        beyond seasons. For them, Charonne is a quiet philosophy—an invitation to live with grace, purpose,
+                        and refined individuality.
+                    </p>
+
+                </div>
+            </div>
+
+            <!-- Right Column: Image -->
+            <div class="about-image fade-in" data-image-type="designers-portrait">
+                <img src="assets/images/about.jpeg" alt="Charonne atelier" class="portrait-placeholder" style="object-fit: cover; width: 100%; height: 100%;">
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section">
+        <div class="section-container">
+            <div class="contact-content fade-in">
+                <h2 class="section-heading gold centered" data-i18n="contact-heading">Connect With Us</h2>
+                <div class="contact-details">
+                    <p class="contact-item">
+                        <span class="contact-label" data-i18n="contact-email">Email</span>
+                        <a href="mailto:atelier@charronne.com" class="contact-link">atelier@charronne.com</a>
+                    </p>
+                    <p class="contact-item">
+                        <span class="contact-label" data-i18n="contact-instagram">Instagram</span>
+                        <a href="https://instagram.com/charronne" target="_blank" rel="noopener noreferrer" class="contact-link">@charronne</a>
+                    </p>
+                    <p class="contact-item">
+                        <span class="contact-label" data-i18n="contact-atelier">Atelier</span>
+                        <span class="contact-text" data-i18n="contact-location">Rue Saint-Honoré, Paris</span>
+                    </p>
+                </div>
+                <div class="contact-cta">
+                    <a href="mailto:collaborate@charronne.com" class="btn btn-primary" data-i18n="btn-work">Work With Us</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="section-container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <img src="assets/images/logo.jpeg" alt="CHARRONNE Logo" class="footer-logo">
+                    <p class="footer-tagline">Charonne crafts restrained opulence—quiet luxury for those who appreciate artistry in every detail.</p>
+                </div>
+                <div>
+                    <h3 class="footer-heading">Explore</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="inspirations.html">Inspirations</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="mockups.html">Mock-ups</a></li>
+                        <li><a href="sketches.html">Sketches</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="footer-heading">Contact</h3>
+                    <div class="footer-contact">
+                        <span>Rue Saint-Honoré, Paris</span>
+                        <a href="mailto:atelier@charronne.com">atelier@charronne.com</a>
+                        <a href="https://instagram.com/charronne" target="_blank" rel="noopener noreferrer">@charronne</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <span>© 2025 CHARRONNE. All rights reserved.</span>
+                <div class="footer-social">
+                    <a class="footer-pill" href="mailto:atelier@charronne.com">Email</a>
+                    <a class="footer-pill" href="https://instagram.com/charronne" target="_blank" rel="noopener noreferrer">Instagram</a>
+                    <a class="footer-pill" href="https://www.pinterest.com" target="_blank" rel="noopener noreferrer">Pinterest</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="js/theme.js"></script>
+    <script src="js/translations.js"></script>
+    <script src="js/navigation.js"></script>
+    <script src="js/scroll-animations.js"></script>
+</body>
+</html>

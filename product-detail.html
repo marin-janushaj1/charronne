@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" id="product-meta-description" content="CHARRONNE Product">
+    <title id="product-title">Product - CHARRONNE</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/typography.css">
+    <link rel="stylesheet" href="css/navigation.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/themes.css">
+    <link rel="stylesheet" href="css/pages/product-detail.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="main-nav" role="navigation">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">
+                <img src="assets/images/logo.jpeg" alt="CHARRONNE Logo" class="logo-img">
+            </a>
+
+            <button class="mobile-menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+            </button>
+
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link" data-i18n="nav-home">Home</a></li>
+                <li><a href="about.html" class="nav-link" data-i18n="nav-about">About</a></li>
+                <li><a href="inspirations.html" class="nav-link" data-i18n="nav-inspirations">Inspirations</a></li>
+                <li><a href="products.html" class="nav-link active" data-i18n="nav-products">Products</a></li>
+                <li><a href="mockups.html" class="nav-link" data-i18n="nav-mockups">Mock-ups</a></li>
+                <li><a href="sketches.html" class="nav-link" data-i18n="nav-sketches">Sketches</a></li>
+                <li><a href="contact.html" class="nav-link" data-i18n="nav-contact">Contact Us</a></li>
+            </ul>
+
+            <div class="nav-controls">
+                <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme">Light</button>
+                <button id="language-toggle" class="language-toggle" aria-label="Switch language">EN</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Product Detail Section -->
+    <section class="product-detail-section">
+        <div class="section-container">
+            <a href="products.html" class="back-link fade-in">← Back to Collection</a>
+
+            <div class="product-detail-grid">
+                <!-- Product Image -->
+                <div class="product-image-container fade-in">
+                    <img id="product-image" src="" alt="" class="product-detail-image">
+                </div>
+
+                <!-- Product Info -->
+                <div class="product-info-container fade-in">
+                    <h1 id="product-name" class="product-detail-name"></h1>
+                    <p id="product-price" class="product-detail-price"></p>
+
+                    <div class="divider-line-gold"></div>
+
+                    <p id="product-description" class="product-detail-description"></p>
+
+                    <div class="product-materials">
+                        <h3 class="section-subheading gold">Materials</h3>
+                        <ul id="product-materials-list" class="materials-list"></ul>
+                    </div>
+
+                    <div class="product-details">
+                        <h3 class="section-subheading gold">Details</h3>
+                        <p id="product-details-text" class="details-text"></p>
+                    </div>
+
+                    <div class="product-cta">
+                        <p class="availability-text">Handcrafted to order</p>
+                        <a href="about.html#contact" class="btn btn-primary">Contact for Inquiry</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Recommendations Section -->
+    <section class="recommendations-section">
+        <div class="section-container">
+            <h2 class="section-heading centered fade-in">You May Also Like</h2>
+            <div class="divider-line-gold"></div>
+
+            <div id="recommendations-grid" class="recommendations-grid">
+                <!-- Recommendations loaded dynamically -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="section-container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <img src="assets/images/logo.jpeg" alt="CHARRONNE Logo" class="footer-logo">
+                    <p class="footer-tagline">Charonne crafts restrained opulence—quiet luxury for those who appreciate artistry in every detail.</p>
+                </div>
+                <div>
+                    <h3 class="footer-heading">Explore</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="inspirations.html">Inspirations</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="mockups.html">Mock-ups</a></li>
+                        <li><a href="sketches.html">Sketches</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="footer-heading">Contact</h3>
+                    <div class="footer-contact">
+                        <span>Rue Saint-Honoré, Paris</span>
+                        <a href="mailto:atelier@charronne.com">atelier@charronne.com</a>
+                        <a href="https://instagram.com/charronne" target="_blank" rel="noopener noreferrer">@charronne</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <span>© 2025 CHARRONNE. All rights reserved.</span>
+                <div class="footer-social">
+                    <a class="footer-pill" href="mailto:atelier@charronne.com">Email</a>
+                    <a class="footer-pill" href="https://instagram.com/charronne" target="_blank" rel="noopener noreferrer">Instagram</a>
+                    <a class="footer-pill" href="https://www.pinterest.com" target="_blank" rel="noopener noreferrer">Pinterest</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="js/products-data.js"></script>
+    <script src="js/product-detail.js"></script>
+    <script src="js/theme.js"></script>
+    <script src="js/translations.js"></script>
+    <script src="js/navigation.js"></script>
+    <script src="js/scroll-animations.js"></script>
+</body>
+</html>

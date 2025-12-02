@@ -1,0 +1,292 @@
+/* Typography Styles */
+
+/* Base Typography */
+body {
+    font-family: var(--font-sans);
+    font-size: var(--font-size-base);
+    font-weight: var(--font-weight-normal);
+    line-height: var(--line-height-normal);
+    color: var(--color-text-primary);
+    background-color: var(--color-background-primary);
+}
+
+/* Headings - Serif Style */
+h1, h2, h3, h4, h5, h6,
+.page-title,
+.section-title,
+.section-heading {
+    font-family: var(--font-serif);
+    font-weight: var(--font-weight-bold);
+    line-height: var(--line-height-tight);
+    color: var(--color-text-primary);
+}
+
+/* Hero Title */
+.hero-title {
+    font-family: var(--font-serif);
+    font-size: var(--font-size-hero);
+    font-weight: var(--font-weight-black);
+    letter-spacing: var(--letter-spacing-widest);
+    text-transform: uppercase;
+    color: var(--color-gold);
+    line-height: 1;
+    margin-bottom: var(--spacing-md);
+}
+
+/* Page Titles */
+.page-title {
+    font-size: var(--font-size-5xl);
+    font-weight: var(--font-weight-black);
+    letter-spacing: var(--letter-spacing-widest);
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: var(--spacing-xl);
+    color: var(--color-text-primary);
+}
+
+/* Section Titles */
+.section-title {
+    font-size: var(--font-size-3xl);
+    font-weight: var(--font-weight-bold);
+    letter-spacing: var(--letter-spacing-wider);
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: var(--spacing-lg);
+}
+
+/* Section Headings */
+.section-heading {
+    font-size: var(--font-size-2xl);
+    font-weight: var(--font-weight-bold);
+    letter-spacing: var(--letter-spacing-wide);
+    margin-bottom: var(--spacing-md);
+}
+
+.section-heading.gold {
+    color: var(--color-gold);
+}
+
+.section-heading.centered {
+    text-align: center;
+}
+
+/* Subheadings */
+.section-subheading {
+    font-size: var(--font-size-lg);
+    font-weight: var(--font-weight-semibold);
+    letter-spacing: var(--letter-spacing-wide);
+    margin-top: var(--spacing-lg);
+    margin-bottom: var(--spacing-sm);
+}
+
+.section-subheading.gold {
+    color: var(--color-gold);
+}
+
+/* Hero Subtitle */
+.hero-subtitle {
+    font-family: var(--font-sans);
+    font-size: var(--font-size-lg);
+    font-weight: var(--font-weight-light);
+    letter-spacing: var(--letter-spacing-wide);
+    color: var(--color-text-primary);
+    margin-bottom: var(--spacing-xl);
+}
+
+/* Body Text */
+.body-text {
+    font-family: var(--font-sans);
+    font-size: var(--font-size-base);
+    font-weight: var(--font-weight-normal);
+    line-height: var(--line-height-relaxed);
+    color: var(--color-text-primary);
+    margin-bottom: var(--spacing-md);
+}
+
+/* Page Intro */
+.page-intro {
+    font-family: var(--font-sans);
+    font-size: var(--font-size-md);
+    font-weight: var(--font-weight-light);
+    line-height: var(--line-height-relaxed);
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto var(--spacing-xl);
+    color: var(--color-text-secondary);
+}
+
+/* Captions */
+.featured-caption,
+.mood-caption,
+.sketch-note {
+    font-family: var(--font-sans);
+    font-size: var(--font-size-sm);
+    font-weight: var(--font-weight-normal);
+    letter-spacing: var(--letter-spacing-wide);
+    text-transform: uppercase;
+    color: var(--color-text-primary);
+    text-align: center;
+    margin-top: var(--spacing-sm);
+}
+
+/* Product Typography */
+.product-name,
+.mockup-name {
+    font-family: var(--font-serif);
+    font-size: var(--font-size-lg);
+    font-weight: var(--font-weight-semibold);
+    letter-spacing: var(--letter-spacing-normal);
+    margin-bottom: var(--spacing-xs);
+}
+
+.product-description {
+    font-family: var(--font-sans);
+    font-size: var(--font-size-sm);
+    font-weight: var(--font-weight-light);
+    line-height: var(--line-height-normal);
+    margin-bottom: var(--spacing-sm);
+    color: var(--color-text-secondary);
+}
+
+.product-price {
+    font-family: var(--font-sans);
+    font-size: var(--font-size-md);
+    font-weight: var(--font-weight-semibold);
+    color: var(--color-gold);
+    margin-bottom: var(--spacing-md);
+}
+
+.mockup-meta {
+    font-family: var(--font-sans);
+    font-size: var(--font-size-xs);
+    font-weight: var(--font-weight-normal);
+    letter-spacing: var(--letter-spacing-wide);
+    text-transform: uppercase;
+    color: var(--color-text-primary);
+    opacity: 0.7;
+}
+
+/* Philosophy Text */
+.philosophy-text {
+    font-family: var(--font-sans);
+    font-size: var(--font-size-md);
+    font-weight: var(--font-weight-light);
+    line-height: var(--line-height-relaxed);
+    text-align: center;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: var(--spacing-xl) 0;
+    color: var(--color-text-primary);
+}
+
+/* Contact Typography */
+.contact-label {
+    font-family: var(--font-sans);
+    font-size: var(--font-size-xs);
+    font-weight: var(--font-weight-medium);
+    letter-spacing: var(--letter-spacing-wider);
+    text-transform: uppercase;
+    color: var(--color-gold);
+    display: block;
+    margin-bottom: var(--spacing-xs);
+}
+
+.contact-link {
+    font-family: var(--font-sans);
+    font-size: var(--font-size-md);
+    font-weight: var(--font-weight-light);
+    transition: color var(--transition-base);
+}
+
+.contact-link:hover {
+    color: var(--color-gold);
+}
+
+.contact-text {
+    font-family: var(--font-sans);
+    font-size: var(--font-size-md);
+    font-weight: var(--font-weight-light);
+}
+
+/* Timeline Typography */
+.timeline-year {
+    font-family: var(--font-sans);
+    font-size: var(--font-size-sm);
+    font-weight: var(--font-weight-bold);
+    letter-spacing: var(--letter-spacing-wider);
+    color: var(--color-gold);
+    display: block;
+    margin-bottom: var(--spacing-xs);
+}
+
+.timeline-text {
+    font-family: var(--font-sans);
+    font-size: var(--font-size-base);
+    font-weight: var(--font-weight-light);
+    color: var(--color-text-primary);
+}
+
+/* Utility Classes */
+.text-center {
+    text-align: center;
+}
+
+.text-uppercase {
+    text-transform: uppercase;
+}
+
+.text-gold {
+    color: var(--color-gold);
+}
+
+.text-white {
+    color: var(--color-white);
+}
+
+.text-black {
+    color: var(--color-black);
+}
+
+/* Responsive Typography */
+@media (max-width: 1024px) {
+    .hero-title {
+        font-size: var(--font-size-5xl);
+    }
+
+    .page-title {
+        font-size: var(--font-size-4xl);
+    }
+
+    .section-title {
+        font-size: var(--font-size-2xl);
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-title {
+        font-size: var(--font-size-4xl);
+        letter-spacing: var(--letter-spacing-wider);
+    }
+
+    .page-title {
+        font-size: var(--font-size-3xl);
+        letter-spacing: var(--letter-spacing-wider);
+    }
+
+    .section-title {
+        font-size: var(--font-size-xl);
+    }
+
+    .section-heading {
+        font-size: var(--font-size-lg);
+    }
+
+    .hero-subtitle,
+    .page-intro {
+        font-size: var(--font-size-base);
+    }
+
+    .philosophy-text {
+        font-size: var(--font-size-base);
+    }
+}
