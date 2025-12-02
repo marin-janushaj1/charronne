@@ -86,6 +86,26 @@
     align-self: flex-start;
 }
 
+.business-card-section {
+    background: var(--color-background-secondary);
+    padding: var(--spacing-4xl) 0;
+}
+
+.business-card-wrapper {
+    display: flex;
+    justify-content: center;
+    padding: var(--spacing-xl) 0;
+}
+
+.business-card-img {
+    max-width: 640px;
+    width: 100%;
+    height: auto;
+    box-shadow: var(--shadow-lg);
+    border: 1px solid var(--color-border-subtle);
+    background: var(--color-card-bg);
+}
+
 [data-theme="dark"] .contact-card,
 [data-theme="dark"] .form-wrapper {
     background: #111111;
